@@ -22,7 +22,6 @@ import { ErrorBoundary } from '@/components/error-boundary';
 import { Toaster } from '@/components/ui/toaster';
 import { TooltipProvider } from '@/components/ui/tooltip';
 import NotFound from '@/pages/not-found';
-import JetourT2 from '@/pages/jetour-t2';
 import { Route, Switch, useLocation, Router as WouterRouter } from 'wouter';
 import { type ReactNode } from 'react';
 
@@ -387,7 +386,6 @@ function Router() {
     <RoutedErrorBoundary>
       <Switch>
         <Route path="/" component={Home} />
-        <Route path="/jetour-t2" component={JetourT2} />
         <Route component={NotFound} />
       </Switch>
     </RoutedErrorBoundary>
